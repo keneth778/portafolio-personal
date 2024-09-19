@@ -1,0 +1,10 @@
+.nav-bar div {
+    border-left: 1px solid gray;
+    display: grid;
+    grid-template-columns: 5rem auto;
+    align-items: center;
+}
+
+.nav-bar div .img-logo {
+    width: 4rem;
+}
