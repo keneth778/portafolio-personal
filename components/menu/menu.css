@@ -1,9 +1,8 @@
 /* Contenedor principal que usa Grid */
 .menu-div {
     display: grid;
-    grid-template-rows: auto 1fr auto; 
-    width: 250px;
-    height: 95vh;
+    grid-template-rows: 42rem 2fr auto; 
+    width: 25.5rem;
     position: fixed;
     left: 0;
     top: 2rem;
@@ -43,6 +42,7 @@
 .contenedor-formulario {
     padding-top: 0rem;
     margin-top: 0rem;
+
 }
 
 .titulo-formulario {
@@ -60,6 +60,7 @@
     border-radius: 5px;
     font-size: 0.9rem;
     box-sizing: border-box;
+    
 }
 
 .input-mensaje {
