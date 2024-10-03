@@ -1,18 +1,24 @@
+import { crearFormulario } from '../form-menu/form.js';
+
+// Crear el contenedor del menú usando Grid
 let menuDiv = document.createElement('div');
 menuDiv.className = "menu-div";
 
+// Crear la lista de herramientas
 let navMenu = document.createElement('ul');
 navMenu.className = "nav-menu";
 
+// Crear las herramientas (igual que antes)
 let herramientas = [
     { color: '#8e44ad', nombre: 'Gestor de Tareas' },
-    { color: '#1abc9c', nombre: 'Editor de Texto' }, 
-    { color: '#e67e22', nombre: 'Analizador de Datos' }, 
-    { color: '#27ae60', nombre: 'Calendario' }, 
-    { color: '#e74c3c', nombre: 'Control de Proyectos' }, 
-    { color: '#2c3e50', nombre: 'Tablero de Notas' }  
+    { color: '#1abc9c', nombre: 'Editor de Texto' },
+    { color: '#e67e22', nombre: 'Analizador de Datos' },
+    { color: '#27ae60', nombre: 'Calendario' },
+    { color: '#e74c3c', nombre: 'Control de Proyectos' },
+    { color: '#2c3e50', nombre: 'Tablero de Notas' }
 ];
 
+// Generar los items del menú (igual que antes)
 herramientas.forEach((herramienta) => {
     let menuItem = document.createElement('li');
     menuItem.className = "menu-item";
@@ -33,31 +39,9 @@ herramientas.forEach((herramienta) => {
 
 menuDiv.appendChild(navMenu);
 
-let contenedorFormulario = document.createElement('div');
-contenedorFormulario.className = "contenedor-formulario";
+// Añadir el formulario al menú (importado desde form.js)
+menuDiv.appendChild(crearFormulario());
 
-let tituloFormulario = document.createElement('h3');
-tituloFormulario.className = "titulo-formulario";
-tituloFormulario.innerText = "Contactar";
-contenedorFormulario.appendChild(tituloFormulario);
-
-let inputNombre = document.createElement('input');
-inputNombre.type = "text";
-inputNombre.placeholder = "Nombre";
-inputNombre.className = "input-contacto";
-contenedorFormulario.appendChild(inputNombre);
-
-let inputMensaje = document.createElement('textarea');
-inputMensaje.placeholder = "Mensaje";
-inputMensaje.className = "input-mensaje";
-contenedorFormulario.appendChild(inputMensaje);
-
-let botonEnviar = document.createElement('button');
-botonEnviar.type = "submit";
-botonEnviar.innerText = "Enviar";
-botonEnviar.className = "boton-enviar";
-contenedorFormulario.appendChild(botonEnviar);
-
-menuDiv.appendChild(contenedorFormulario);
-
+// Exportar el menú completo
 export { menuDiv };
+    

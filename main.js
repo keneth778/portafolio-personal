@@ -12,7 +12,8 @@ navBar.appendChild(navBarDiv);
 DOM.appendChild(navBar);
 
 /* Menú lateral */
-DOM.appendChild(menuDiv);  
+DOM.appendChild(menuDiv); 
+
 
 /* proyect */
 let proyect = document.createElement('section');
