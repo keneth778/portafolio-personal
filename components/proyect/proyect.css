@@ -1,8 +1,8 @@
-.secProyectos{
+.secProyectos {
     padding: 1.5rem 2rem;
 }
 
-.div-item{
+.div-item {
     margin-top: 1.3rem;
     border-bottom: 1px solid rgb(113, 110, 110);
     padding: 1rem;
@@ -12,16 +12,16 @@
     justify-content: space-between;
 }
 
-.tit-Nombre{
+.tit-Nombre {
     font-size: 1.2rem;
 }
 
-.a-githubPage{
+.a-githubPage {
     text-decoration: none;
     color: black;
 }
 
-.btn-Github{
+.btn-Github {
     width: 100%;
     max-width: 8rem;
     background-color: black;
@@ -34,4 +34,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .div-item {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .tit-Nombre {
+        font-size: 1rem; 
+    }
+
+    .btn-Github {
+        max-width: 100%; 
+    }
 }
